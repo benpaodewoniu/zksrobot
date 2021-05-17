@@ -1,11 +1,8 @@
 name: 'GitHub ZKS Robot'
 
 on:
-  push:
-    branches:
-      - master
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   zks-emailbot:
