@@ -33,6 +33,3 @@ csdn-emailbot:
         to: ${{ secrets.RECEIVER }}
         from: GitHub Actions
         content_type: text/plain
-
-
-        MKJQHGVZYYHTEEDP
