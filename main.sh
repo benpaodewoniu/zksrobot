@@ -1,1 +1,1 @@
-python zksrobot/main.py
+python ./main.py
