@@ -2,7 +2,7 @@ name: 'GitHub ZKS Robot'
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron:  '*/6 * * * *'
 
 jobs:
   zks-emailbot:
