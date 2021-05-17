@@ -18,9 +18,9 @@ jobs:
         with:
           python-version: 3.7
       - name: 'Install requirements'
-        run: pip install -r ./zksrobot/requirements.txt
+        run: pip install -r ./requirements.txt
       - name: 'Working'
-        run: bash ./zksrobot/main.sh
+        run: bash ./main.sh
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
         with:
