@@ -18,4 +18,6 @@ jobs:
       - name: 'Install requirements'
         run: pip install -r ./requirements.txt
       - name: 'Working'
-        run: bash ./main.sh
+        export sprice=1.5
+        export bprice=1.8
+        run: python ./main.py ${{ secrets.MAIL_USERNAME }} ${{ secrets.MAIL_PASSWORD }} ${{ secrets.RECEIVER }} $sprice $bprice
