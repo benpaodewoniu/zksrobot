@@ -22,7 +22,7 @@ jobs:
       - name: 'Working'
         run: bash ./main.sh
       - name: 'Send mail'
-        uses: dawidd6/action-send-mail@master
+        uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.163.com
           server_port: 465
@@ -32,4 +32,3 @@ jobs:
           body: file://email.txt
           to: ${{ secrets.RECEIVER }}
           from: GitHub Actions
-          content_type: text/plain
